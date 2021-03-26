@@ -1,0 +1,118 @@
+/* Color pallete: https://www.schemecolor.com/bright-german-color-palette.php */
+:root {
+  --outer-space: #484649;
+  --ogre-odor: #fe5339;
+  --gargoyle-gas: #ffd541;
+  --pantone-pink: #df4595;
+  --cornsilk: #fff3dc;
+  --baumans-font: "Baumans", Arial, Helvetica, sans-serif;
+  --quicksand-font: "Quicksand", Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: var(--quicksand-font);
+}
+
+body {
+  background-color: var(--outer-space);
+}
+#container {
+  width: 90%;
+  background-color: var(--cornsilk);
+  margin: 1em auto;
+  height: 500px;
+  border-radius: 0 1.5em 1.5em 0;
+}
+.top-line {
+  display: inline-block;
+  width: 90%;
+  border-radius: 0 1.5em 1.5em 0;
+  background-color: var(--gargoyle-gas);
+}
+#title,
+#ist {
+  display: inline-block;
+  /* font-family: var(--baumans-font); */
+  color: var(--outer-space);
+}
+
+#target {
+  display: inline-block;
+  font-size: 3em;
+  color: var(--pantone-pink);
+  margin: 0;
+  text-align: right;
+}
+#title {
+  font-size: 5em;
+  font-weight: bold;
+  padding-left: 0.25em;
+  margin: 0;
+}
+#ist {
+  font-size: 3em;
+  margin: 0;
+}
+nav {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+nav a {
+  font-size: 1.5em;
+  background-color: var(--ogre-odor);
+  padding: 0.25em;
+  /* border-radius: 0 15px; */
+  text-align: center;
+  font-family: var(--quicksand-font);
+  /* margin: 0.25em 0.25em 0.25em 0; */
+  width: 7em;
+  height: auto;
+  float: left;
+  text-align: center;
+}
+
+nav a:last-child {
+  border-radius: 0 1.5em 1.5em 0;
+}
+
+nav a span {
+  width: 150em;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--cornsilk);
+}
+
+a:visited {
+  color: var(--cornsilk);
+}
+
+a:hover span {
+  display: none;
+}
+
+#welcome:hover:before {
+  content: "welcome";
+}
+
+#altstadt:hover:before {
+  content: "old city";
+}
+
+#beethoven:hover:before {
+  content: "piano man";
+}
+
+#poppelsdorf:hover:before {
+  content: "palace";
+}
+
+#macke:hover:before {
+  content: "art";
+}
+
+#about-me:hover:before {
+  content: "about me";
+  color: var(--outer-space);
+}
